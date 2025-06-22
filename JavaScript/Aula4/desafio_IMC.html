@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If e Else</title>
+
+    <script>
+        var nome = prompt("Digite seu nome: ");
+        var altura = prompt("Digite sua altura em centimetros: ");
+        var peso = prompt("Digite seu peso em quilogramas: ");
+
+        altura = parseFloat(altura);
+        peso = parseFloat(peso);
+
+        altura = altura / 100; 
+        
+        // Converte centímetros para metros
+        var M = peso / (altura * altura);
+        M = M.toFixed(2); // Arredonda para duas casas decimais
+
+        var classificacao = '';
+
+        if (M < 16)
+        {
+            classificacao = 'Baixo peso muito grave!';
+        }
+        else if (M >= 16 && M <= 16.99)
+        {
+            classificacao = 'Baixo peso grave!';
+        }
+        else if (M >= 17 && M <= 18.49)
+        {
+            classificacao = 'Baixo peso!';
+        }
+        else if (M >= 18.5 && M <= 24.99)
+        {
+            classificacao = 'Peso normal!';
+        }
+        else if (M >= 25 && M <= 29.99)
+        {
+            classificacao = 'Sobrepeso!';
+        }
+        else if (M >= 30 && M <= 34.99)
+        {
+            classificacao = 'Obesidade I!';
+        }
+        else if (M >= 35 && M <= 39.99)
+        {
+            classificacao = 'Obesidade II!';
+        }
+        else
+        {
+            classificacao = 'Obesidade III!';
+        }
+
+        document.write(nome + ' seu IMC é: ' + M + ' sendo classificado como: ' + classificacao);
+
+    </script>
+
+</head>
+<body>
+
+
+
+</body>
+</html>

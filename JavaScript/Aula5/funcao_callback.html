@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If e Else</title>
+
+    <script>
+        function exibirArtigo(id, callbackSucesso, callbackErro)
+        {
+            if (true)
+            {
+                callbackSucesso('Artigo exibido com sucesso!');
+            }
+            else 
+            {
+                callbackErro('Erro ao exibir o artigo.');
+            }
+        }
+
+        var callbackSucesso = function(titulo, descricao)
+        {
+            document.write(titulo + '<br>');
+            document.write(descricao + '<br>');
+        }
+        {
+
+        }
+
+        var callbackErro = function(erro)
+        {
+            document.write('Erro: ' + erro + '<br>');
+        }
+
+        exibirArtigo(1, callbackSucesso, callbackErro);
+    </script>
+
+</head>
+<body>
+
+
+
+</body>
+</html>

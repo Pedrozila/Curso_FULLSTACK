@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If e Else</title>
+
+    <script>
+
+        var num1 = parseFloat(prompt("Digite o primeiro número: "));
+        var num2 = parseFloat(prompt("Digite o segundo número: "));
+        var select = prompt("Digite a operação que deseja realizar: soma ou subtração ");
+
+        function calcular(num1, num2, select) 
+        {
+            resultado = 0;
+
+            if (select === "soma") 
+            {
+                var resultado = num1 + num2;
+            } 
+            else if (select === "subtração") 
+            {
+                var resultado = num1 - num2;
+            }
+
+            return resultado;
+        }
+
+        document.write("O resultado da operação é: " + calcular(num1, num2, select));
+    </script>
+
+</head>
+<body>
+
+
+
+</body>
+</html>

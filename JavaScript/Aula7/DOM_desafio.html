@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+
+</head>
+<body>
+
+    <input type="text" onfocus="mudaFundo()" onblur="check()" placeholder="Digite um texto" id="texto">
+
+    <script>
+        function mudaFundo() {
+            document.getElementById('texto').style.backgroundColor = 'yellow';
+        }
+
+        function check() {
+            var texto = document.getElementById('texto').value;
+            if (texto.length < 3) {
+                document.getElementById('texto').style.backgroundColor = 'red';
+            } else {
+                document.getElementById('texto').style.backgroundColor = 'green';
+            }
+        }
+    </script>
+</body>
+</html>
